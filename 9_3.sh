@@ -11,14 +11,24 @@
 #	echo "$1 have no access"
 #fi
 
-case $1x in
+read -t 10 -p "输入你的名字: " name
+
+case "$name"x in
 "dingzhen"x)
 	echo "xuebao bizui"
 ;;
 "bromikey"x)
-	echo "hello $1"
+	echo "hello $name"
 ;;
 "158"x)
 	echo "zuiren"
 ;;
 esac
+
+for (( i=0; i <= 100; i++ ))
+do
+	sum=$[ $sum + $i ]
+done
+#echo $sum
+
+
